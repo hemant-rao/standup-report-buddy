@@ -16,8 +16,11 @@ p {
 }
 .submit-button {
   background-color: $primary-btn-clr;
-  border: 1px solid;
+  border: 2px solid;
   border-color: $primary-btn-border-clr;
+  border-radius: 6px;
+  height: 36px;
+  width: 80px;
   color: $white-clr;
 }
 </style>
