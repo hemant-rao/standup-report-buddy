@@ -1,11 +1,21 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/login">Login</router-link>
+      <NevBar />
   </div>
   <router-view />
 </template>
+
+<script>
+import NevBar from "./views/Header/NevBar.vue";
+export default {
+    components:{
+      NevBar
+  },
+  setup() {
+    
+  },
+}
+</script>
 
 <style lang="scss">
 @import "../node_modules/typeface-roboto/index.css";
