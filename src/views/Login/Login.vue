@@ -45,6 +45,11 @@
                         Login
                       </button>
                     </div>
+                    <div class="col-12 text-right mt-2">
+                      <router-link to="/forgot" class="nav-link d-flex justify-content-end"
+                        >Forgot Password?</router-link
+                      >
+                    </div>
                   </form>
                 </div>
               </div>

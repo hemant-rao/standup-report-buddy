@@ -23,6 +23,7 @@
           <router-link to="/registration" class="nav-link"
             >Registration</router-link
           >
+          <router-link to="/dashboard" class="nav-link">Dashboard</router-link>
         </div>
         <!-- <form class="d-flex">
           <input
