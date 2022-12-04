@@ -1,7 +1,7 @@
 <template>
   <div class="col-12 p-0 overflow-hidden">
     <div class="row">
-        <p>Old Report</p>
+      <p><b>Old Reports</b></p>
     </div>
   </div>
 </template>
@@ -10,13 +10,10 @@
 // import LogoContainer from "../Header/Logo-container.vue";
 export default {
   name: "Old Report",
-  components: {
-
-  },
+  components: {},
 };
 </script>
 
 <style lang="scss" scoped>
 @import "../../assets/style/colors.scss";
-
 </style>
