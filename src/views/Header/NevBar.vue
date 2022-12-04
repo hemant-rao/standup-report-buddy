@@ -1,17 +1,9 @@
 <template>
   <div class="col-12">
-    <!-- <div class="row">
-      <div class="col-4">
-        <LogoContainer />
-      </div>
-      <div class="col-8">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link> |
-        <router-link to="/login">Login</router-link>
-      </div>
-    </div> -->
-    <nav class="container navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><LogoContainer /></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-2">
+      <a class="navbar-brand p-0" style="height: 30px; width: 160px;" href="#">
+        <LogoContainer class="h-100 w-100" />
+      </a>
       <button
         class="navbar-toggler"
         type="button"
@@ -23,14 +15,16 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav mr-auto">
           <router-link to="/" class="nav-item nav-link">Home</router-link>
           <router-link to="/about" class="nav-item nav-link">About</router-link>
           <router-link to="/login" class="nav-link">Login</router-link>
+          <router-link to="/registration" class="nav-link"
+            >Registration</router-link
+          >
         </div>
-        <form class="d-flex">
+        <!-- <form class="d-flex">
           <input
             class="form-control me-2"
             type="search"
@@ -38,7 +32,7 @@
             aria-label="Search"
           />
           <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        </form> -->
       </div>
     </nav>
   </div>
@@ -65,8 +59,13 @@ export default {
 }
 
 #nav a.router-link-exact-active {
-  color: whitesmoke;
-  background: crimson;
-  border-radius: .5rem;
+  color: black;
+  background: transparent;
+  border-bottom: 1px solid #4285f4;
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
 }
 </style>
