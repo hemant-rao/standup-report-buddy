@@ -5,6 +5,8 @@ import Registration from '../views/Registration/Registration.vue'
 import Dashboard from '../views/Dashboard/Dashboard.vue'
 import Forgot from "../views/Forgot/Forgot.vue"
 import ChangePassword from "../views/Change_Password/ChangePassword.vue"
+import OldReport from "../views/Report/OldReport.vue"
+import TodayReport from "../views/Report/TodayReport.vue"
 
 const routes = [
   {
@@ -36,6 +38,16 @@ const routes = [
     path: '/dashboard',
     name: 'Dashboard',
     component: Dashboard
+  },
+  {
+    path: '/old-report',
+    name: 'OldReport',
+    component: OldReport
+  },
+  {
+    path: '/today-report',
+    name: 'TodayReport',
+    component: TodayReport
   },
   {
     path: '/about',
