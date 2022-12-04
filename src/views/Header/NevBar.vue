@@ -17,13 +17,43 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="navbar-nav mr-auto">
-          <router-link to="/" class="nav-item nav-link">Home</router-link>
-          <router-link to="/about" class="nav-item nav-link">About</router-link>
-          <router-link to="/login" class="nav-link">Login</router-link>
-          <router-link to="/registration" class="nav-link"
+          <router-link to="/" active-class="active" class="nav-item nav-link"
+            >Home</router-link
+          >
+          <router-link
+            to="/about"
+            active-class="active"
+            class="nav-item nav-link"
+            >About</router-link
+          >
+          <router-link
+            tag="li"
+            active-class="active"
+            to="/login"
+            class="nav-link"
+            >Login</router-link
+          >
+          <router-link
+            tag="li"
+            active-class="active"
+            to="/registration"
+            class="nav-link"
             >Registration</router-link
           >
-          <router-link to="/dashboard" class="nav-link">Dashboard</router-link>
+          <router-link
+            tag="li"
+            active-class="active"
+            to="/dashboard"
+            class="nav-link"
+            >Dashboard</router-link
+          >
+          <router-link
+            tag="li"
+            active-class="active"
+            to="/reports"
+            class="nav-link"
+            >Reports</router-link
+          >
         </div>
         <!-- <form class="d-flex">
           <input
@@ -48,9 +78,9 @@ export default {
   setup() {},
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 #nav {
-  padding: 30px;
+  // padding: 30px;
   text-align: center;
 }
 
@@ -59,10 +89,22 @@ export default {
   color: #2c3e50;
 }
 
-#nav a.router-link-exact-active {
+#nav a.router-link-exact-active,
+.active.nav-link {
   color: black;
   background: transparent;
-  border-bottom: 1px solid #4285f4;
+  border-bottom: 1px solid #4285f4 !important;
+}
+.nav {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  .nav-link {
+    border-bottom: 1px solid #fff;
+  }
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
