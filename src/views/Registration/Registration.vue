@@ -1,5 +1,5 @@
 <template>
-    
+    <p>Registration</p>
 </template>
 <script>
 export default {
